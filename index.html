@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Kayla Mullen | Portfolio</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,opsz,wght@0,8..60,200..900;1,8..60,200..900&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <!-- ===== NAVBAR ===== -->
+  <header class="navbar">
+    <!-- Make the logo clickable -->
+    <div class="logo">
+      <a href="#home">Kayla Mullen</a>
+    </div>
+    <nav>
+      <ul class="nav-links">
+        <!-- Removed Home link -->
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#journey">Experience</a></li>
+        <li><a href="#connect">Contact</a></li>
+      </ul>
+    </nav>
+  </header>  
+
+  <!-- ===== HOME SECTION ===== -->
+    <section id="home" class="section home">
+        <div class="intro">
+        <div class="intro-left">
+            <!-- Circle photo -->
+            <img src="./IMG_0033.jpeg" alt="Kayla Mullen" class="intro-photo" />
+        </div>
+        <div class="intro-right">
+            <p class="subtitle">
+            Computer Scientist | Data Analyst | Public Interest Technologist
+            </p>
+            <h1>
+            Using computational thinking, technology, and data analysis to explore
+            challenges in health, accessibility, and society.
+            </h1>
+        </div>
+        </div>
+    </section>
+  
+
+  <!-- ===== PROJECTS SECTION ===== -->
+  <section id="projects" class="section projects">
+    <h2>Projects</h2>
+    <div class="project-grid">
+      <div class="project-card">
+        <div class="project-icon">
+            <!-- Example using Iconify icon -->
+            <i class="iconify" data-icon="mdi:chart-box-outline"></i>
+        </div>
+        <h3>Data Analysis of Applications to CHAPA 40B Affordable Homes</h3>
+        <p>Analyzed Chapter 40B housing applications for CHAPA, identifying 
+            demographic and geographic trends to inform equitable affordable 
+            housing policy. </p>
+        <div class="project-skills">
+            <span class="skill">Python</span>
+            <span class="skill">Pandas</span>
+            <span class="skill">ArcGIS</span>
+            <span class="skill">Matplotlib</span>
+        </div>
+        <a href="#" class="btn">Learn More</a>
+      </div>
+
+      <div class="project-card">
+        <div class="project-icon">
+            <!-- Example using Iconify icon -->
+            <i class="iconify" data-icon="mdi:chart-box-outline"></i>
+        </div>
+        <h3>PPG Heart Rate Monitoring System with Real Time GUI</h3>
+        <p>Developed embedded C code on an ESP32 microcontroller to filter 
+            PPG sensor data. Designed a real time pulse detection algorithm to 
+            identify heartbeats via peak analysis and calculate BPM. 
+            Sent data to host computer via Bluetooth. Created a Python GUI 
+            with PySimpleGUI, Matplotlib and Tkinter to display live heart 
+            rate metrics and pulse waveform with user customized abnormal pulse 
+            warning thresholds. </p>
+        <div class="project-skills">
+            <span class="skill">Python</span>
+            <span class="skill">C</span>
+            <span class="skill">Arduino</span>
+            <span class="skill">Matplotlib</span>
+            <span class="skill">PySimpleGUI</span>
+        </div>
+        <a href="#" class="btn">Learn More</a>
+      </div>
+
+      <div class="project-card">
+        <div class="project-icon">
+            <!-- Example using Iconify icon -->
+            <i class="iconify" data-icon="mdi:chart-box-outline"></i>
+        </div>
+        <h3>Mini Java Implementation in OCaml</h3>
+        <p>Built a simplified Java-like language in OCaml by implementing a 
+            type checker for objects, methods, and fields, and an interpreter 
+            for object execution. Designed test cases to ensure correctness 
+            and integrated with a provided compiler. </p>
+        <div class="project-skills">
+            <span class="skill">OCaml</span>
+        </div>
+        <a href="#" class="btn">Learn More</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== EXPERIENCE ===== -->
+  <section id="journey" class="section journey">
+    <h2>My Journey</h2>
+    <p>
+      I am currently a student focusing on the intersection of healthcare and technology. 
+      My path has been driven by a desire to create positive social impact, particularly in 
+      healthcare accessibility and equity. Each experience has built on the last, shaping a 
+      trajectory that blends research, community engagement, and direct patient support.
+    </p>
+  </section>
+  
+  <section id="experience" class="section experience">
+    <h2>Experience Timeline</h2>
+    <div class="timeline">
+
+      <!-- PIT-NE Fellowship -->
+      <div class="timeline-item">
+        <div class="timeline-date">May 2025 - July 2025 | Boston, MA</div>
+        <div class="timeline-content">
+          <h3>PIT-NE Fellowship</h3>
+          <p>Analyzed 4 years of Chapter 40B housing application data for CHAPA to identify 
+          demographic and geographic trends in affordable housing.</p>
+  
+          <ul class="sub-timeline">
+            <li>
+              <span class="sub-date">June 2025</span>
+              <span class="sub-detail">
+                <strong>Community Showcase:</strong> Presented findings to Boston affordable housing professionals
+              </span>
+            </li>
+          </ul>
+        </div>
+      </div>
+  
+  
+      <!-- Gadiraju Lab -->
+      <div class="timeline-item">
+        <div class="timeline-date">May 2024 - July 2024 | Wellesley College</div>
+        <div class="timeline-content">
+          <h3>Student Researcher - Gadiraju Lab</h3>
+          <p>Explored disability justice in NLPs and LLMs, conducted interviews, and designed 
+          a longitudinal study shaped to participant accessibility needs. Gained experience in 
+          scientific writing while publishing findings.</p>
+  
+          <ul class="sub-timeline">
+            <li>
+              <span class="sub-date">October 2024</span>
+              <span class="sub-detail">
+                <strong>Publication:</strong> 
+                “I'm treating it kind of like a diary”: Characterizing how users with disabilities
+                 use AI chatbots. <i>Proceedings of the 26th annual international ACM SIGACCESS 
+                    conference on computers and accessibility.</i> 
+                    <a href="https://doi.org/10.1145/3663548.3688549">ACM Digital Library.</a> 
+                 
+
+              </span>
+            </li>
+            <li>
+              <span class="sub-date">April 2025</span>
+              <span class="sub-detail">
+                <strong>Talk:</strong> Ruhlman Conference — Generative AI Chatbots: Bias, Risks & Empowerment
+              </span>
+            </li>
+          </ul>
+        </div>
+      </div>
+  
+
+      <!-- Home Healthcare -->
+      <div class="timeline-item">
+        <div class="timeline-date">2021 – 2023</div>
+        <div class="timeline-content">
+          <h3>Home Healthcare Support</h3>
+          <p>Supported patients in daily living activities including wound care, 
+          medicine administration, errands, and personal care. Collaborated with care 
+          teams to communicate health condition changes.</p>
+        </div>
+      </div>
+  
+    </div>
+  </section>
+  
+
+  <!-- ===== CONNECT ===== -->
+  <footer id="connect" class="section connect">
+    <h2>Let’s Connect</h2>
+    <div class="social-links">
+      <a href="mailto:km118@wellesley.edu">Email</a> |
+      <a href="https://github.com/kaylamullen" target="_blank">GitHub</a> |
+      <a href="www.linkedin.com/in/kayla-mullen-52526a277" target="_blank">LinkedIn</a>
+    </div>
+  </footer>
+</body>
+</html>
