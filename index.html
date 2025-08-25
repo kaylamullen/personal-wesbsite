@@ -13,10 +13,12 @@
 
   <!-- ===== NAVBAR ===== -->
   <header class="navbar">
-    <!-- Make the logo clickable -->
     <div class="logo">
       <a href="#home">Kayla Mullen</a>
     </div>
+
+    <button class="nav-toggle" aria-label="Toggle navigation menu">☰</button>
+
     <nav>
       <ul class="nav-links">
         <li><a href="#about">About</a></li>
@@ -27,137 +29,133 @@
     </nav>
   </header>  
 
-  <!-- ===== HOME SECTION ===== -->
+  <main>
+    <!-- ===== HOME SECTION ===== -->
     <section id="home" class="section home">
-        <div class="intro">
+      <div class="intro">
         <div class="intro-left">
-            <!-- Circle photo -->
-            <img src="./IMG_0033.jpeg" alt="Portrait of Kayla Mullen" class="intro-photo" />
+          <img src="./IMG_0033.jpeg" alt="Portrait of Kayla Mullen" loading="lazy" class="intro-photo" />
         </div>
         <div class="intro-right">
-          <p class="subtitle">
-            Computer Scientist | Software Developer | Data Analyst
-            </p>
-            <h1>
+          <p class="subtitle">Computer Scientist | Software Developer | Data Analyst</p>
+          <h2>
             Building software, analyzing data, and designing systems to 
             solve complex problems from a perspective shaped by community 
             engagement, research and accessibility.
-            </h1>
-            
+          </h2>
         </div>
-        </div>
+      </div>
     </section>
-  
 
-<!-- ===== ABOUT ME ===== -->
-<section id="about" class="section about">
-  <h2>About Me</h2>
-  <p>
-    I'm a senior Computer Science student at Wellesley College with strong experience in 
-    systems programming, embedded development, and data analysis. My coursework and projects 
-    have exposed me to technical domains including memory management, programming languages, 
-    data visualization, and real-time systems.
-  </p>
-  <p>
-    I am particularly drawn to projects that combine technical rigor with real-world impact. 
-    By integrating research, accessibility, and community engagement into my work, I aim to 
-    design systems that are not only efficient but equitable and user-centered.
-  </p>
-  <div class="skills">
-    <h3>Skills Overview</h3>
-    <strong>Technical:</strong> Python, Java C, OCaml, Racket, HTML, CSS, x86 Assembly, Embedded Systems, Data Analysis, 
-    ArcGIS, PySimpleGUI, Pandas, Matplotlib, Seaborn<br>
-    <strong>Perspective:</strong> Accessibility, Community Engagement, Equitable Design, Research-Driven Development
-  </div>
-</section>
+    <!-- ===== ABOUT ME ===== -->
+    <section id="about" class="section about">
+      <h2>About Me</h2>
+      <p>
+        I'm a senior Computer Science student at Wellesley College with strong experience in 
+        systems programming, embedded development, and data analysis. My coursework and projects 
+        have exposed me to technical domains including memory management, programming languages, 
+        data visualization, and real-time systems.
+      </p>
+      <p>
+        I am particularly drawn to projects that combine technical rigor with real-world impact. 
+        By integrating research, accessibility, and community engagement into my work, I aim to 
+        design systems that are not only efficient but equitable and user-centered.
+      </p>
+      <div class="skills">
+        <h3>Skills Overview</h3>
+        <strong>Technical:</strong> Python, Java, C, OCaml, Racket, HTML, CSS, x86 Assembly, Embedded Systems, Data Analysis, 
+        ArcGIS, PySimpleGUI, Pandas, Matplotlib, Seaborn<br>
+        <strong>Perspective:</strong> Accessibility, Community Engagement, Equitable Design, Research-Driven Development
+      </div>
+    </section>
 
+    <!-- ===== PROJECTS SECTION ===== -->
+    <section id="projects" class="section projects">
+      <h2>Projects</h2>
+      <div class="project-grid">
 
-  <!-- ===== PROJECTS SECTION ===== -->
-  <section id="projects" class="section projects">
-    <h2>Projects</h2>
-    <div class="project-grid">
-      <div class="project-card">
-        <h3>Data Analysis of Applications to CHAPA 40B Affordable Homes</h3>
-        <p>Analyzed Chapter 40B housing applications for CHAPA, identifying 
-            demographic and geographic trends to inform equitable affordable 
-            housing policy. </p>
-        <div class="project-skills">
+        <article class="project-card">
+          <h3>Data Analysis of Applications to CHAPA 40B Affordable Homes</h3>
+          <p>Analyzed Chapter 40B housing applications for CHAPA, identifying 
+             demographic and geographic trends to inform equitable affordable 
+             housing policy.</p>
+          <div class="project-skills">
             <span class="skill">Python</span>
             <span class="skill">Pandas</span>
             <span class="skill">ArcGIS</span>
             <span class="skill">Matplotlib</span>
-        </div>
-        <a href="https://github.com/BU-Spark/pitne-affordable-housing-efficacy" class="btn" target="_blank">Learn More</a>
-      </div>
+          </div>
+          <a href="https://github.com/BU-Spark/pitne-affordable-housing-efficacy" class="btn" target="_blank" rel="noopener noreferrer">Learn More</a>
+        </article>
 
-      <div class="project-card">
-        <h3>PPG Heart Rate Monitoring System with Real Time GUI</h3>
-        <p>Developed embedded C code on an ESP32 microcontroller to filter 
-            PPG sensor data. Designed a real time pulse detection algorithm to 
-            identify heartbeats via peak analysis and calculate BPM. 
-            Sent data to host computer via Bluetooth. Created a Python GUI 
-            with PySimpleGUI, Matplotlib and Tkinter to display live heart 
-            rate metrics and pulse waveform with user customized abnormal pulse 
-            warning thresholds. </p>
-        <div class="project-skills">
+        <article class="project-card">
+          <h3>PPG Heart Rate Monitoring System with Real Time GUI</h3>
+          <p>Developed embedded C code on an ESP32 microcontroller to filter 
+             PPG sensor data. Designed a real time pulse detection algorithm to 
+             identify heartbeats via peak analysis and calculate BPM. 
+             Sent data to host computer via Bluetooth. Created a Python GUI 
+             with PySimpleGUI, Matplotlib and Tkinter to display live heart 
+             rate metrics and pulse waveform with user customized abnormal pulse 
+             warning thresholds.</p>
+          <div class="project-skills">
             <span class="skill">Python</span>
             <span class="skill">C</span>
             <span class="skill">Arduino</span>
             <span class="skill">Matplotlib</span>
             <span class="skill">PySimpleGUI</span>
-        </div>
-        <a href="project-bmet2922.html" class="btn">Learn More</a>
-      </div>
+          </div>
+          <a href="project-bmet2922.html" class="btn">Learn More</a>
+        </article>
 
-      <div class="project-card">
-        <h3>Mini Java Implementation in OCaml</h3>
-        <p>Built a simplified Java-like language in OCaml by implementing a 
-            type checker for objects, methods, and fields, and an interpreter 
-            for object execution. Designed test cases to ensure correctness 
-            and integrated with a provided compiler. </p>
-        <div class="project-skills">
+        <article class="project-card">
+          <h3>Mini Java Implementation in OCaml</h3>
+          <p>Built a simplified Java-like language in OCaml by implementing a 
+             type checker for objects, methods, and fields, and an interpreter 
+             for object execution. Designed test cases to ensure correctness 
+             and integrated with a provided compiler.</p>
+          <div class="project-skills">
             <span class="skill">OCaml</span>
-        </div>
-        <a href="https://hackmd.io/@RbcpVXJZQJa0j9NcVfk5xg/BkpNVL4yle" class="btn" target="_blank">Learn More</a>
-      </div>
-      <div class="project-card">
-        <h3>Custom Memory Allocator in C</h3>
-        <p>
-          Implemented a first-fit implicit free list allocator to simulate 
-          dynamic memory management. Designed and tested functions to allocate 
-          blocks, free memory, and coalesce adjacent free blocks for efficient reuse. 
-          Gained a deeper understanding of how malloc and free work at the system level.
-        </p>
-        <div class="project-skills">
-          <span class="skill">C</span>
-          <span class="skill">Memory Management</span>
-          <span class="skill">Systems Programming</span>
-        </div>
-        <a href="https://cs.wellesley.edu/~cs240/s25/assignments/malloc/#implicit" class="btn" target="_blank">Learn More</a>
-      </div>
-      
-    </div>
-  </section>
+          </div>
+          <a href="https://hackmd.io/@RbcpVXJZQJa0j9NcVfk5xg/BkpNVL4yle" class="btn" target="_blank" rel="noopener noreferrer">Learn More</a>
+        </article>
 
-  <!-- ===== EXPERIENCE ===== -->
-  <section id="journey" class="section journey">
-    <h2>My Journey</h2>
-    <p>
-      I am currently a senior Computer Science student with experience designing and 
-      implementing systems, building data pipelines, and developing algorithms with 
-      attention to computational efficiency. My projects and research experiences have helped 
-      me develop strong problem-solving skills, proficiency in multiple programming languages, 
-      and familiarity with technical tools like ArcGIS, MatPlotLib and Pandas. Each experience has 
-      built on the last, shaping a trajectory that blends research, community engagement, and 
-      accessibility, allowing me to bring unique insight and perspective to technical challenges.
-    </p>
-  </section>
-  
-  <section id="experience" class="section experience">
-    <h2>Experience Timeline</h2>
-    <div class="timeline">
+        <article class="project-card">
+          <h3>Custom Memory Allocator in C</h3>
+          <p>
+            Implemented a first-fit implicit free list allocator to simulate 
+            dynamic memory management. Designed and tested functions to allocate 
+            blocks, free memory, and coalesce adjacent free blocks for efficient reuse. 
+            Gained a deeper understanding of how malloc and free work at the system level.
+          </p>
+          <div class="project-skills">
+            <span class="skill">C</span>
+            <span class="skill">Memory Management</span>
+            <span class="skill">Systems Programming</span>
+          </div>
+          <a href="https://cs.wellesley.edu/~cs240/s25/assignments/malloc/#implicit" class="btn" target="_blank" rel="noopener noreferrer">Learn More</a>
+        </article>
 
-      <!-- PIT-NE Fellowship -->
+      </div>
+    </section>
+
+    <!-- ===== EXPERIENCE / JOURNEY ===== -->
+    <section id="journey" class="section journey">
+      <h2>My Journey</h2>
+      <p>
+        I am currently a senior Computer Science student with experience designing and 
+        implementing systems, building data pipelines, and developing algorithms with 
+        attention to computational efficiency. My projects and research experiences have helped 
+        me develop strong problem-solving skills, proficiency in multiple programming languages, 
+        and familiarity with technical tools like ArcGIS, Matplotlib and Pandas. Each experience has 
+        built on the last, shaping a trajectory that blends research, community engagement, and 
+        accessibility, allowing me to bring unique insight and perspective to technical challenges.
+      </p>
+    </section>
+
+    <section id="experience" class="section experience">
+      <h2>Experience Timeline</h2>
+      <div class="timeline">
+          <!-- PIT-NE Fellowship -->
       <div class="timeline-item">
         <div class="timeline-date">May 2025 - July 2025 | Boston, MA</div>
         <div class="timeline-content">
@@ -221,18 +219,29 @@
         </div>
       </div>
   
-    </div>
-  </section>
-  
+      </div>
+    </section>
+  </main>
 
   <!-- ===== CONNECT ===== -->
   <footer id="connect" class="section connect">
     <h2>Let’s Connect</h2>
     <div class="social-links">
-      <a href="mailto:km118@wellesley.edu">Email</a> |
-      <a href="https://github.com/kaylamullen" target="_blank">GitHub</a> |
-      <a href="https://linkedin.com/in/kayla-mullen-52526a277" target="_blank">LinkedIn</a>
+      <a href="mailto:km118@wellesley.edu" aria-label="Email Kayla Mullen">Email</a> |
+      <a href="https://github.com/kaylamullen" target="_blank" rel="noopener noreferrer" aria-label="Kayla Mullen GitHub profile">GitHub</a> |
+      <a href="https://linkedin.com/in/kayla-mullen-52526a277" target="_blank" rel="noopener noreferrer" aria-label="Kayla Mullen LinkedIn profile">LinkedIn</a>
     </div>
   </footer>
+
+  <script>
+    // ===== Mobile Navbar Toggle =====
+    const navToggle = document.querySelector('.nav-toggle');
+    const navbar = document.querySelector('.navbar');
+
+    navToggle.addEventListener('click', () => {
+      navbar.classList.toggle('active');
+    });
+  </script>
+
 </body>
 </html>
