@@ -19,11 +19,11 @@
     </div>
     <nav>
       <ul class="nav-links">
-        <!-- Removed Home link -->
+        <li><a href="#about">About</a></li>
         <li><a href="#projects">Projects</a></li>
         <li><a href="#journey">Experience</a></li>
         <li><a href="#connect">Contact</a></li>
-      </ul>
+      </ul>      
     </nav>
   </header>  
 
@@ -32,30 +32,51 @@
         <div class="intro">
         <div class="intro-left">
             <!-- Circle photo -->
-            <img src="./IMG_0033.jpeg" alt="Kayla Mullen" class="intro-photo" />
+            <img src="./IMG_0033.jpeg" alt="Portrait of Kayla Mullen" class="intro-photo" />
         </div>
         <div class="intro-right">
-            <p class="subtitle">
-            Computer Scientist | Data Analyst | Public Interest Technologist
+          <p class="subtitle">
+            Computer Scientist | Software Developer | Data Analyst
             </p>
             <h1>
-            Using computational thinking, technology, and data analysis to explore
-            challenges in health, accessibility, and society.
+            Building software, analyzing data, and designing systems to 
+            solve complex problems from a perspective shaped by community 
+            engagement, research and accessibility.
             </h1>
+            
         </div>
         </div>
     </section>
   
+
+<!-- ===== ABOUT ME ===== -->
+<section id="about" class="section about">
+  <h2>About Me</h2>
+  <p>
+    I'm a senior Computer Science student at Wellesley College with strong experience in 
+    systems programming, embedded development, and data analysis. My coursework and projects 
+    have exposed me to technical domains including memory management, programming languages, 
+    data visualization, and real-time systems.
+  </p>
+  <p>
+    I am particularly drawn to projects that combine technical rigor with real-world impact. 
+    By integrating research, accessibility, and community engagement into my work, I aim to 
+    design systems that are not only efficient but equitable and user-centered.
+  </p>
+  <div class="skills">
+    <h3>Skills Overview</h3>
+    <strong>Technical:</strong> Python, Java C, OCaml, Racket, HTML, CSS, x86 Assembly, Embedded Systems, Data Analysis, 
+    ArcGIS, PySimpleGUI, Pandas, Matplotlib, Seaborn<br>
+    <strong>Perspective:</strong> Accessibility, Community Engagement, Equitable Design, Research-Driven Development
+  </div>
+</section>
+
 
   <!-- ===== PROJECTS SECTION ===== -->
   <section id="projects" class="section projects">
     <h2>Projects</h2>
     <div class="project-grid">
       <div class="project-card">
-        <div class="project-icon">
-            <!-- Example using Iconify icon -->
-            <i class="iconify" data-icon="mdi:chart-box-outline"></i>
-        </div>
         <h3>Data Analysis of Applications to CHAPA 40B Affordable Homes</h3>
         <p>Analyzed Chapter 40B housing applications for CHAPA, identifying 
             demographic and geographic trends to inform equitable affordable 
@@ -66,14 +87,10 @@
             <span class="skill">ArcGIS</span>
             <span class="skill">Matplotlib</span>
         </div>
-        <a href="#" class="btn">Learn More</a>
+        <a href="https://github.com/BU-Spark/pitne-affordable-housing-efficacy" class="btn" target="_blank">Learn More</a>
       </div>
 
       <div class="project-card">
-        <div class="project-icon">
-            <!-- Example using Iconify icon -->
-            <i class="iconify" data-icon="mdi:chart-box-outline"></i>
-        </div>
         <h3>PPG Heart Rate Monitoring System with Real Time GUI</h3>
         <p>Developed embedded C code on an ESP32 microcontroller to filter 
             PPG sensor data. Designed a real time pulse detection algorithm to 
@@ -89,14 +106,10 @@
             <span class="skill">Matplotlib</span>
             <span class="skill">PySimpleGUI</span>
         </div>
-        <a href="#" class="btn">Learn More</a>
+        <a href="project-bmet2922.html" class="btn">Learn More</a>
       </div>
 
       <div class="project-card">
-        <div class="project-icon">
-            <!-- Example using Iconify icon -->
-            <i class="iconify" data-icon="mdi:chart-box-outline"></i>
-        </div>
         <h3>Mini Java Implementation in OCaml</h3>
         <p>Built a simplified Java-like language in OCaml by implementing a 
             type checker for objects, methods, and fields, and an interpreter 
@@ -105,8 +118,24 @@
         <div class="project-skills">
             <span class="skill">OCaml</span>
         </div>
-        <a href="#" class="btn">Learn More</a>
+        <a href="https://hackmd.io/@RbcpVXJZQJa0j9NcVfk5xg/BkpNVL4yle" class="btn" target="_blank">Learn More</a>
       </div>
+      <div class="project-card">
+        <h3>Custom Memory Allocator in C</h3>
+        <p>
+          Implemented a first-fit implicit free list allocator to simulate 
+          dynamic memory management. Designed and tested functions to allocate 
+          blocks, free memory, and coalesce adjacent free blocks for efficient reuse. 
+          Gained a deeper understanding of how malloc and free work at the system level.
+        </p>
+        <div class="project-skills">
+          <span class="skill">C</span>
+          <span class="skill">Memory Management</span>
+          <span class="skill">Systems Programming</span>
+        </div>
+        <a href="https://cs.wellesley.edu/~cs240/s25/assignments/malloc/#implicit" class="btn" target="_blank">Learn More</a>
+      </div>
+      
     </div>
   </section>
 
@@ -114,10 +143,13 @@
   <section id="journey" class="section journey">
     <h2>My Journey</h2>
     <p>
-      I am currently a student focusing on the intersection of healthcare and technology. 
-      My path has been driven by a desire to create positive social impact, particularly in 
-      healthcare accessibility and equity. Each experience has built on the last, shaping a 
-      trajectory that blends research, community engagement, and direct patient support.
+      I am currently a senior Computer Science student with experience designing and 
+      implementing systems, building data pipelines, and developing algorithms with 
+      attention to computational efficiency. My projects and research experiences have helped 
+      me develop strong problem-solving skills, proficiency in multiple programming languages, 
+      and familiarity with technical tools like ArcGIS, MatPlotLib and Pandas. Each experience has 
+      built on the last, shaping a trajectory that blends research, community engagement, and 
+      accessibility, allowing me to bring unique insight and perspective to technical challenges.
     </p>
   </section>
   

@@ -17,6 +17,11 @@
     color: #2A4D69;
     font-weight: 1000;
   }
+
+  /* Smooth scrolling */
+  html {
+    scroll-behavior: smooth;
+  }
   
   
   /* ===== NAVBAR ===== */
@@ -73,6 +78,25 @@
     color: #2A4D69; /* navy accent hover */
   }
   
+  /* RESPONSIVE NAV (simple mobile-friendly) */
+  @media (max-width: 600px) {
+    .nav-links {
+      flex-direction: column;
+      gap: 0.75rem;
+      background: #DAE9BB;
+      padding: 1rem;
+      position: absolute;
+      top: 60px;
+      right: 20px;
+      display: none;
+    }
+
+    .navbar.active .nav-links {
+      display: flex;
+    }
+  }
+
+
   /* ===== SECTION GENERAL ===== */
 .section {
   padding: 50px 10%; /* keep comfortable vertical spacing */
@@ -116,6 +140,19 @@
   line-height: 1.4;
 }
 
+/* ABOUT SECTION */
+.about {
+  background: #DAE9BB;
+  border-radius: 12px;
+  padding: 2rem;
+  max-width: 900px;
+  margin: auto;
+}
+
+.about p {
+  margin-bottom: 2rem;
+}
+
   
   /* ===== PROJECTS ===== */
 
@@ -126,14 +163,14 @@
   
   .project-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 2rem;
   }
   
   .project-card {
     border: 1px solid #ddd;
     background: #DAE9BB;
-    padding: 1.5rem;
+    padding: 2.5rem;
     text-align: center;
     transition: transform 0.3s, background 0.3s, color 0.3s;
   }
@@ -145,11 +182,6 @@
     color: #fff;
   }
   
-  .project-icon {
-    font-size: 3rem;
-    margin-bottom: 1rem;
-    color: #2E1F0F;
-  }
   
   .project-card:hover .project-icon {
     color: #BED787;
@@ -184,7 +216,7 @@
     color: #fff;
     text-decoration: none;
     transition: background 0.3s, color 0.3s;
-    font-weight: 100;
+    font-weight: 400;
   }
   
   .project-card:hover a.btn {
@@ -281,4 +313,31 @@
     color: #DAE9BB;
   }
   
-  
+  /* Project detail layout */
+  .project-detail h1 {
+    font-size: 2rem;
+    line-height: 1.2;
+  }
+
+  .project-detail h2 {
+    margin-top: 1rem;
+    margin-bottom: 0.5rem;
+  }
+
+  /* Callout note box */
+  .callout.note {
+    background: #DAE9BB;
+    border-left: 4px solid #2A4D69;
+    padding: 1rem;
+    border-radius: 12px;
+  }
+
+  /* Make buttons inside callouts sit nicely */
+  .callout .btn {
+    margin-left: 0.5rem;
+  }
+
+  /* Ensure long links wrap on mobile */
+  .project-detail a {
+    word-break: break-word;
+  }
