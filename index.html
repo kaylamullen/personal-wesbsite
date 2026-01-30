@@ -8,6 +8,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,opsz,wght@0,8..60,200..900;1,8..60,200..900&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
 </head>
 <body>
 
@@ -34,7 +35,7 @@
     <section id="home" class="section home">
       <div class="intro">
         <div class="intro-left">
-          <img src="./IMG_0033.jpeg" alt="Portrait of Kayla Mullen" loading="lazy" class="intro-photo" />
+          <img src="images/IMG_0033.jpeg" alt="Portrait of Kayla Mullen" loading="lazy" class="intro-photo" />
         </div>
         <div class="intro-right">
           <p class="subtitle">Computer Scientist | Software Developer | Data Analyst</p>
@@ -75,6 +76,26 @@
       <div class="project-grid">
 
         <article class="project-card">
+          <h3>Art and Story Sharing Database and Web Interface</h3>
+          <p>Deployed a Flask hosted web app for users to share drawings and 
+            write stories in a collaborative space. Developed with RESTful 
+            routes and server side rendering through Jinja2. Constructed a 
+            database of referential tables to manage user submitted info, art 
+            and stories. Implemented asynchronous retrieval from the database 
+            with Ajax.</p>
+          <div class="project-skills">
+            <span class="skill">SQL</span>
+            <span class="skill">Python</span>
+            <span class="skill">HTML</span>
+            <span class="skill">CSS</span>
+            <span class="skill">JavaScript</span>
+            <span class="skill">Flask</span>
+            
+          </div>
+          <a href="https://github.com/megdugan/CritterCave" class="btn" target="_blank" rel="noopener noreferrer">Learn More</a>
+        </article>
+
+        <article class="project-card">
           <h3>Data Analysis of Applications to CHAPA 40B Affordable Homes</h3>
           <p>Analyzed Chapter 40B housing applications for CHAPA, identifying 
              demographic and geographic trends to inform equitable affordable 
@@ -90,19 +111,17 @@
 
         <article class="project-card">
           <h3>PPG Heart Rate Monitoring System with Real Time GUI</h3>
-          <p>Developed embedded C code on an ESP32 microcontroller to filter 
-             PPG sensor data. Designed a real time pulse detection algorithm to 
-             identify heartbeats via peak analysis and calculate BPM. 
-             Sent data to host computer via Bluetooth. Created a Python GUI 
-             with PySimpleGUI, Matplotlib and Tkinter to display live heart 
-             rate metrics and pulse waveform with user customized abnormal pulse 
-             warning thresholds.</p>
+          <p>Developed embedded C code on an ESP32 microcontroller to filter PPG 
+            sensor data. Designed a real time pulse detection algorithm to identify 
+            heartbeats via peak analysis and calculate BPM. Sent data to host computer 
+            via Bluetooth. Created a Python desktop GUI to display live heart rate 
+            metrics and pulse waveform with user customized abnormal pulse warning 
+            thresholds.</p>
           <div class="project-skills">
             <span class="skill">Python</span>
             <span class="skill">C</span>
             <span class="skill">Arduino</span>
             <span class="skill">Matplotlib</span>
-            <span class="skill">PySimpleGUI</span>
           </div>
           <a href="project-bmet2922.html" class="btn">Learn More</a>
         </article>
@@ -133,6 +152,36 @@
             <span class="skill">Systems Programming</span>
           </div>
           <a href="https://cs.wellesley.edu/~cs240/s25/assignments/malloc/#implicit" class="btn" target="_blank" rel="noopener noreferrer">Learn More</a>
+        </article>
+
+        <article class="project-card">
+          <h3>Crab Age Prediction Model</h3>
+          <p>Developed a baseline linear regression model for prediction of crab age trained 
+            on features extracted from commercially farmed crabs. Developed a final neural 
+            network based model and tuned hyperparameters for improved performance. Wrote an 
+            initial project proposal and final research paper summarizing findings. Achieved 
+            improved MSE scores with final tuned neural network model over the Baseline.</p>
+          <div class="project-skills">
+            <span class="skill">Python</span>
+            <span class="skill">scikit-learn</span>
+            <span class="skill">Machine Learning</span>
+          </div>
+          <a href="https://cs.wellesley.edu/~cs240/s25/assignments/malloc/#implicit" class="btn" target="_blank" rel="noopener noreferrer">Learn More</a>
+        </article>
+
+        <article class="project-card">
+          <h3>Multi-Task Allocation for Mobile Crowd Sensing Platforms</h3>
+          <p>Developed an algorithm for allocation of spatial-temporal tasks to 
+            participants in different locations to optimize total possible task 
+            reward in the system. Implemented a simulator to test algorithm 
+            performance on real data. Trained Prophet models on time-series data 
+            for each location to predict future task rewards.</p>
+          <div class="project-skills">
+            <span class="skill">Python</span>
+            <span class="skill">Spatio-Temporal Algorithm Design</span>
+            <span class="skill">Digital Twin</span>
+          </div>
+          <a href="project-cs236.html" class="btn">Learn More</a>
         </article>
 
       </div>
